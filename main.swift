@@ -17,8 +17,8 @@ for item in array
     print(ii)
 }
 
-for var i=0; i<array.count - 1; ++i {
-    for var j=0; j < array.count - 1 - i; ++j{
+for i in 0..<array.count - 1 {
+    for j in 0..<array.count-1-i{
         if array[j] > array[j + 1] {
             var temp = array[j + 1]
             array[j + 1] = array[j]
